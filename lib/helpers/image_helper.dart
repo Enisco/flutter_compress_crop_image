@@ -14,7 +14,7 @@ class ImageHelper {
       maxHeight: 1800,
     );
     if (pickedFile != null) {
-     var pickedImage = File(pickedFile.path);
+      var pickedImage = File(pickedFile.path);
       print('Current filepath: ${pickedFile.path}');
       var editedImage = await ImageHelper.compress(image: pickedImage);
       selectedImage = File(editedImage.path);

@@ -19,7 +19,7 @@ class _TestPageState extends State<TestPage> {
       appBar: AppBar(
         backgroundColor: Colors.purple,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Test',
           style: TextStyle(
             fontSize: 18,
@@ -46,7 +46,7 @@ class _TestPageState extends State<TestPage> {
                       ),
                     )
                   : const SizedBox.shrink(),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               TextButton(
                 onPressed: () async {
                   print('Choose image');
@@ -59,12 +59,12 @@ class _TestPageState extends State<TestPage> {
                   fixedSize: Size(size.width, 60),
                   padding: EdgeInsets.zero,
                   shape: RoundedRectangleBorder(
-                    side: BorderSide(width: 1, color: Colors.transparent),
+                    side: const BorderSide(width: 1, color: Colors.transparent),
                     borderRadius: BorderRadius.circular(28),
                   ),
                   backgroundColor: Colors.amber[800],
                 ),
-                child: Text(
+                child: const Text(
                   'Choose image',
                   style: TextStyle(
                     fontSize: 15,
